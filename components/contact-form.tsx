@@ -50,18 +50,18 @@ export function ContactForm() {
 
   if (submitted) {
     return (
-      <div className="rounded-xl border border-emerald-500/30 bg-emerald-500/10 p-6 sm:p-8 text-foreground space-y-4 text-center">
-        <div className="size-12 rounded-full bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 mx-auto flex items-center justify-center">
-          <CheckCircle2 className="size-7" />
+      <div className="rounded-xl border-2 border-emerald-500 bg-emerald-500/15 p-6 sm:p-8 text-foreground space-y-4 text-center">
+        <div className="size-14 rounded-full bg-emerald-500/20 text-emerald-700 dark:text-emerald-400 mx-auto flex items-center justify-center font-bold">
+          <CheckCircle2 className="size-8" />
         </div>
-        <h3 className="text-xl font-bold text-foreground">
+        <h3 className="text-xl font-extrabold text-foreground">
           Inquiry Prepared Successfully!
         </h3>
-        <p className="text-xs sm:text-sm text-muted-foreground max-w-md mx-auto leading-relaxed">
+        <p className="text-sm sm:text-base text-slate-800 dark:text-slate-200 max-w-md mx-auto leading-relaxed font-medium">
           Thank you, <strong>{name}</strong>. For instant dispatch and faster turnaround, click below to forward your details directly to technician Henry on WhatsApp:
         </p>
         <div className="pt-2 flex flex-col sm:flex-row justify-center gap-3">
-          <Button asChild size="lg" variant="whatsapp" className="w-full sm:w-auto font-bold">
+          <Button asChild size="lg" variant="whatsapp" className="w-full sm:w-auto font-extrabold shadow-md">
             <a href={getWhatsAppForwardUrl()} target="_blank" rel="noopener noreferrer">
               <MessageSquare className="size-4" />
               Forward to Technician on WhatsApp
@@ -70,6 +70,7 @@ export function ContactForm() {
           <Button
             type="button"
             variant="outline"
+            className="border-slate-400 dark:border-slate-700 font-semibold"
             onClick={() => {
               setSubmitted(false);
               setName("");
@@ -86,11 +87,11 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form onSubmit={handleSubmit} className="space-y-5">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {/* Name */}
         <div className="space-y-1.5">
-          <label htmlFor="name" className="text-xs font-semibold text-foreground">
+          <label htmlFor="name" className="text-sm font-bold text-slate-900 dark:text-slate-100">
             Full Name or Company <span className="text-destructive">*</span>
           </label>
           <Input
@@ -99,12 +100,13 @@ export function ContactForm() {
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="e.g. John Kamau / Apex Logistics"
+            className="border-slate-300 dark:border-slate-700 text-foreground font-medium placeholder:text-slate-500 dark:placeholder:text-slate-400"
           />
         </div>
 
         {/* Phone */}
         <div className="space-y-1.5">
-          <label htmlFor="phone" className="text-xs font-semibold text-foreground">
+          <label htmlFor="phone" className="text-sm font-bold text-slate-900 dark:text-slate-100">
             Phone / WhatsApp Number <span className="text-destructive">*</span>
           </label>
           <Input
@@ -114,6 +116,7 @@ export function ContactForm() {
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             placeholder="e.g. 0712 345 678"
+            className="border-slate-300 dark:border-slate-700 text-foreground font-medium placeholder:text-slate-500 dark:placeholder:text-slate-400"
           />
         </div>
       </div>
@@ -121,7 +124,7 @@ export function ContactForm() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {/* Location */}
         <div className="space-y-1.5">
-          <label htmlFor="location" className="text-xs font-semibold text-foreground">
+          <label htmlFor="location" className="text-sm font-bold text-slate-900 dark:text-slate-100">
             Project Location / County <span className="text-destructive">*</span>
           </label>
           <Input
@@ -130,19 +133,20 @@ export function ContactForm() {
             value={location}
             onChange={(e) => setLocation(e.target.value)}
             placeholder="e.g. Westlands, Nairobi / Nakuru / Kampala"
+            className="border-slate-300 dark:border-slate-700 text-foreground font-medium placeholder:text-slate-500 dark:placeholder:text-slate-400"
           />
         </div>
 
         {/* Service Type */}
         <div className="space-y-1.5">
-          <label htmlFor="service" className="text-xs font-semibold text-foreground">
+          <label htmlFor="service" className="text-sm font-bold text-slate-900 dark:text-slate-100">
             Required Service
           </label>
           <select
             id="service"
             value={service}
             onChange={(e) => setService(e.target.value)}
-            className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-xs ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+            className="flex h-10 w-full rounded-md border border-slate-300 dark:border-slate-700 bg-background px-3 py-2 text-sm font-medium text-foreground ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           >
             <option value="">-- Select a Service --</option>
             {SERVICES.map((s) => (
@@ -157,10 +161,10 @@ export function ContactForm() {
 
       {/* Urgency */}
       <div className="space-y-1.5">
-        <label className="text-xs font-semibold text-foreground block">
+        <label className="text-sm font-bold text-slate-900 dark:text-slate-100 block">
           Response Urgency
         </label>
-        <div className="grid grid-cols-3 gap-2 text-xs">
+        <div className="grid grid-cols-3 gap-2 text-xs sm:text-sm">
           {[
             { label: "Emergency Fault (Today)", value: "Emergency" },
             { label: "Standard (1-2 Days)", value: "Standard" },
@@ -170,10 +174,10 @@ export function ContactForm() {
               type="button"
               key={item.value}
               onClick={() => setUrgency(item.value)}
-              className={`py-2 px-2.5 rounded-lg border text-center font-medium transition-colors ${
+              className={`py-2 px-2.5 rounded-lg border text-center font-bold transition-colors ${
                 urgency === item.value
-                  ? "border-sky-600 bg-sky-50 dark:bg-slate-800 text-sky-700 dark:text-sky-300 font-bold"
-                  : "border-border bg-card text-muted-foreground hover:bg-accent"
+                  ? "border-sky-600 bg-sky-100 dark:bg-slate-800 text-sky-900 dark:text-sky-300 border-2"
+                  : "border-slate-300 dark:border-slate-700 bg-card text-slate-800 dark:text-slate-200 hover:bg-slate-100"
               }`}
             >
               {item.label}
@@ -184,7 +188,7 @@ export function ContactForm() {
 
       {/* Message */}
       <div className="space-y-1.5">
-        <label htmlFor="message" className="text-xs font-semibold text-foreground">
+        <label htmlFor="message" className="text-sm font-bold text-slate-900 dark:text-slate-100">
           Requirement or Fault Description <span className="text-destructive">*</span>
         </label>
         <Textarea
@@ -194,21 +198,22 @@ export function ContactForm() {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           placeholder="Describe your requirements (e.g. DStv Explora installation with ExtraView in two rooms; or electric fence sounding alarm intermittently; or CCTV quote for 8 IP cameras with phone app viewing)."
+          className="border-slate-300 dark:border-slate-700 text-foreground font-medium placeholder:text-slate-500 dark:placeholder:text-slate-400"
         />
       </div>
 
       <Button
         type="submit"
-        className="w-full bg-sky-600 hover:bg-sky-500 text-white font-bold h-11"
+        className="w-full bg-sky-600 hover:bg-sky-500 text-white font-bold h-11 text-base shadow-md"
         size="lg"
       >
         <Send className="size-4" />
         Submit Quote Request
       </Button>
 
-      <p className="text-[11px] text-center text-muted-foreground">
+      <p className="text-xs sm:text-sm text-center text-slate-700 dark:text-slate-300 font-medium">
         Need immediate response? Call direct:{" "}
-        <a href={CONTACT_INFO.phoneTel} className="font-bold text-foreground hover:underline">
+        <a href={CONTACT_INFO.phoneTel} className="font-bold text-sky-700 dark:text-sky-400 hover:underline">
           {CONTACT_INFO.phone}
         </a>{" "}
         or message on WhatsApp.
