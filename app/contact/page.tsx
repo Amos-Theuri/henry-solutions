@@ -93,9 +93,9 @@ export default function ContactPage() {
                 <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 font-medium">
                   Available for voice calls, urgent fault reports, and scheduling.
                 </p>
-                <Button asChild size="sm" className="w-full bg-amber-600 hover:bg-amber-500 text-white font-bold shadow-sm">
+                <Button asChild size="sm" className="w-full bg-amber-600 hover:bg-amber-500 text-white font-bold shadow-sm min-h-[44px]">
                   <a href={CONTACT_INFO.phoneTel}>
-                    <Phone className="size-3.5" />
+                    <Phone className="size-4" />
                     Call {CONTACT_INFO.phone} Now
                   </a>
                 </Button>
@@ -122,9 +122,9 @@ export default function ContactPage() {
                 <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 font-medium">
                   Send site photos, error codes, pin locations, or architectural drawings directly.
                 </p>
-                <Button asChild size="sm" variant="whatsapp" className="w-full font-bold shadow-sm">
+                <Button asChild size="sm" variant="whatsapp" className="w-full font-bold shadow-sm min-h-[44px]">
                   <a href={CONTACT_INFO.whatsappUrl} target="_blank" rel="noopener noreferrer">
-                    <MessageSquare className="size-3.5" />
+                    <MessageSquare className="size-4" />
                     Open WhatsApp Chat
                   </a>
                 </Button>
@@ -149,9 +149,9 @@ export default function ContactPage() {
                 <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 font-medium">
                   Send official tender documents, Bills of Quantities, or corporate inquiries.
                 </p>
-                <Button asChild size="sm" variant="outline" className="w-full border-slate-400 dark:border-slate-700 font-bold">
+                <Button asChild size="sm" variant="outline" className="w-full border-slate-400 dark:border-slate-700 font-bold min-h-[44px]">
                   <a href={CONTACT_INFO.emailMailto}>
-                    <Mail className="size-3.5" />
+                    <Mail className="size-4" />
                     Send Email Inquiry
                   </a>
                 </Button>
@@ -171,7 +171,7 @@ export default function ContactPage() {
             </div>
 
             {/* Request a Quote / Inspection Form */}
-            <div className="lg:col-span-7 rounded-2xl border border-slate-300 dark:border-slate-800 bg-card p-6 sm:p-8 shadow-md">
+            <div className="lg:col-span-7 rounded-2xl border border-slate-300 dark:border-slate-800 bg-card p-4 sm:p-8 shadow-md">
               <div className="mb-6 space-y-1">
                 <h2 className="text-xl font-bold tracking-tight text-foreground">
                   Request an Estimate or Diagnostic Visit

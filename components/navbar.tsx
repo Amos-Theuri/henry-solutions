@@ -127,25 +127,25 @@ export function Navbar() {
         </div>
 
         {/* Mobile menu button */}
-        <div className="flex sm:hidden items-center gap-2">
-          <Button asChild variant="whatsapp" size="sm" className="px-2.5 h-8 font-bold">
+        <div className="flex sm:hidden items-center gap-1.5">
+          <Button asChild variant="whatsapp" size="sm" className="min-h-[44px] min-w-[44px] px-2.5 font-bold shadow-sm">
             <a
               href={CONTACT_INFO.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp quick chat"
             >
-              <MessageSquare className="size-4" />
+              <MessageSquare className="size-5" />
             </a>
           </Button>
           <button
             type="button"
             onClick={() => setIsOpen((prev) => !prev)}
-            className="inline-flex size-10 items-center justify-center rounded-md border border-slate-300 dark:border-slate-700 p-2 text-foreground hover:bg-accent focus:outline-none focus:ring-2 focus:ring-ring"
+            className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-md border border-slate-300 dark:border-slate-700 p-2 text-foreground hover:bg-accent focus:outline-none focus:ring-2 focus:ring-ring"
             aria-expanded={isOpen}
             aria-label="Toggle navigation menu"
           >
-            {isOpen ? <X className="size-5" /> : <Menu className="size-5" />}
+            {isOpen ? <X className="size-6" /> : <Menu className="size-6" />}
           </button>
         </div>
       </div>
@@ -161,7 +161,7 @@ export function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className={`px-3 py-2.5 rounded-md text-base font-bold transition-colors ${
+                  className={`min-h-[44px] flex items-center px-3.5 py-2.5 rounded-md text-base font-bold transition-colors ${
                     isActive
                       ? "bg-sky-100 text-sky-900 dark:bg-sky-950 dark:text-sky-300 font-extrabold border border-sky-300 dark:border-sky-800"
                       : "text-slate-900 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800"
@@ -172,8 +172,8 @@ export function Navbar() {
               );
             })}
           </nav>
-          <div className="pt-3 border-t border-slate-300 dark:border-slate-800 flex flex-col gap-2">
-            <Button asChild variant="whatsapp" className="w-full justify-center font-bold">
+          <div className="pt-3 border-t border-slate-300 dark:border-slate-800 flex flex-col gap-2.5">
+            <Button asChild variant="whatsapp" className="w-full justify-center font-bold min-h-[44px]">
               <a
                 href={CONTACT_INFO.whatsappUrl}
                 target="_blank"
@@ -184,7 +184,7 @@ export function Navbar() {
                 WhatsApp: {CONTACT_INFO.whatsapp}
               </a>
             </Button>
-            <Button asChild variant="default" className="w-full justify-center bg-sky-600 hover:bg-sky-500 font-bold">
+            <Button asChild variant="default" className="w-full justify-center bg-sky-600 hover:bg-sky-500 font-bold min-h-[44px]">
               <a href={CONTACT_INFO.phoneTel} onClick={() => setIsOpen(false)}>
                 <Phone className="size-4" />
                 Direct Call: {CONTACT_INFO.phone}

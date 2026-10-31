@@ -29,21 +29,21 @@ export function Footer() {
               </p>
             </div>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 w-full sm:w-auto">
             <a
               href={CONTACT_INFO.phoneTel}
-              className="inline-flex items-center gap-2 rounded-lg bg-amber-600 hover:bg-amber-500 px-4 py-2 text-xs sm:text-sm font-bold text-white shadow-sm transition-colors"
+              className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-lg bg-amber-600 hover:bg-amber-500 px-4 py-2.5 text-xs sm:text-sm font-bold text-white shadow-sm transition-colors text-center"
             >
-              <Phone className="size-3.5" />
+              <Phone className="size-4" />
               Call {CONTACT_INFO.phone}
             </a>
             <a
               href={CONTACT_INFO.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 px-4 py-2 text-xs sm:text-sm font-bold text-white shadow-sm transition-colors"
+              className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 px-4 py-2.5 text-xs sm:text-sm font-bold text-white shadow-sm transition-colors text-center"
             >
-              <MessageSquare className="size-3.5" />
+              <MessageSquare className="size-4" />
               WhatsApp Diagnostic
             </a>
           </div>
@@ -51,7 +51,7 @@ export function Footer() {
       </div>
 
       {/* Main Footer Links */}
-      <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 pt-12 pb-24 sm:py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Col 1: About & Contractor Summary */}
           <div className="space-y-4">
@@ -181,24 +181,24 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-slate-800 text-xs sm:text-sm text-slate-300 flex flex-col sm:flex-row items-center justify-between gap-4 font-medium">
+        <div className="mt-12 pt-8 border-t border-slate-800 text-xs sm:text-sm text-slate-300 flex flex-col sm:flex-row items-center justify-between gap-4 font-medium text-center sm:text-left">
           <p>
             &copy; 2026 Henry Solutions. Low-Voltage &amp; Security Systems Contractor. Nairobi, Kenya.
           </p>
-          <div className="flex items-center gap-6">
-            <Link href="/" className="hover:text-white transition-colors">
+          <div className="flex flex-wrap justify-center sm:justify-end items-center gap-x-6 gap-y-3">
+            <Link href="/" className="hover:text-white transition-colors py-1">
               Home
             </Link>
-            <Link href="/services" className="hover:text-white transition-colors">
+            <Link href="/services" className="hover:text-white transition-colors py-1">
               Services
             </Link>
-            <Link href="/service-areas" className="hover:text-white transition-colors">
+            <Link href="/service-areas" className="hover:text-white transition-colors py-1">
               Service Areas
             </Link>
-            <Link href="/about" className="hover:text-white transition-colors">
+            <Link href="/about" className="hover:text-white transition-colors py-1">
               About
             </Link>
-            <Link href="/contact" className="hover:text-white transition-colors">
+            <Link href="/contact" className="hover:text-white transition-colors py-1">
               Contact
             </Link>
           </div>

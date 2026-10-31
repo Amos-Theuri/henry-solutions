@@ -146,7 +146,7 @@ export function ContactForm() {
             id="service"
             value={service}
             onChange={(e) => setService(e.target.value)}
-            className="flex h-10 w-full rounded-md border border-slate-300 dark:border-slate-700 bg-background px-3 py-2 text-sm font-medium text-foreground ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+            className="flex min-h-[44px] w-full rounded-md border border-slate-300 dark:border-slate-700 bg-background px-3 py-2 text-sm font-medium text-foreground ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           >
             <option value="">-- Select a Service --</option>
             {SERVICES.map((s) => (
@@ -164,7 +164,7 @@ export function ContactForm() {
         <label className="text-sm font-bold text-slate-900 dark:text-slate-100 block">
           Response Urgency
         </label>
-        <div className="grid grid-cols-3 gap-2 text-xs sm:text-sm">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
           {[
             { label: "Emergency Fault (Today)", value: "Emergency" },
             { label: "Standard (1-2 Days)", value: "Standard" },
@@ -174,7 +174,7 @@ export function ContactForm() {
               type="button"
               key={item.value}
               onClick={() => setUrgency(item.value)}
-              className={`py-2 px-2.5 rounded-lg border text-center font-bold transition-colors ${
+              className={`min-h-[44px] py-2.5 px-3 rounded-lg border text-center font-bold text-xs sm:text-sm transition-colors ${
                 urgency === item.value
                   ? "border-sky-600 bg-sky-100 dark:bg-slate-800 text-sky-900 dark:text-sky-300 border-2"
                   : "border-slate-300 dark:border-slate-700 bg-card text-slate-800 dark:text-slate-200 hover:bg-slate-100"

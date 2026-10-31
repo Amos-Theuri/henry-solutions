@@ -46,31 +46,31 @@ export default function HomePage() {
               <span>Low-Voltage &amp; Perimeter Security Contractor &bull; Nairobi</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.12]">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight sm:leading-[1.12]">
               Precision Satellite, CCTV &amp; Security Engineering.
             </h1>
 
-            <p className="text-lg sm:text-xl text-slate-100 font-medium leading-relaxed">
+            <p className="text-base sm:text-xl text-slate-100 font-medium leading-relaxed">
               Henry Solutions installs, repairs, and maintains critical low-voltage infrastructure for homes, commercial compounds, and institutions. Based in Nairobi, deploying nationwide across all 47 counties and East Africa.
             </p>
 
             {/* Direct Action CTAs */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
-              <Button asChild size="lg" variant="default" className="bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold">
+              <Button asChild size="lg" variant="default" className="min-h-[44px] bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold">
                 <a href={CONTACT_INFO.phoneTel}>
                   <Phone className="size-4" />
                   <span>Call {CONTACT_INFO.phone}</span>
                 </a>
               </Button>
 
-              <Button asChild size="lg" variant="whatsapp" className="font-bold text-white shadow-md">
+              <Button asChild size="lg" variant="whatsapp" className="min-h-[44px] font-bold text-white shadow-md">
                 <a href={CONTACT_INFO.whatsappUrl} target="_blank" rel="noopener noreferrer">
                   <MessageSquare className="size-4" />
                   <span>WhatsApp Diagnosis</span>
                 </a>
               </Button>
 
-              <Button asChild size="lg" variant="outline" className="border-slate-500 text-white hover:bg-slate-800 font-semibold">
+              <Button asChild size="lg" variant="outline" className="min-h-[44px] border-slate-500 text-white hover:bg-slate-800 font-semibold">
                 <Link href="/services">
                   <span>Explore Services</span>
                   <ArrowRight className="size-4 ml-1" />
@@ -156,14 +156,14 @@ export default function HomePage() {
                     ))}
                   </div>
                 </CardContent>
-                <CardFooter className="pt-3 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between gap-2">
+                <CardFooter className="pt-3 border-t border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5">
                   <Link
                     href={`/services#${service.id}`}
-                    className="text-xs sm:text-sm font-bold text-sky-700 dark:text-sky-400 hover:underline"
+                    className="inline-flex items-center min-h-[36px] text-xs sm:text-sm font-bold text-sky-700 dark:text-sky-400 hover:underline"
                   >
                     Details &amp; Equipment &rarr;
                   </Link>
-                  <Button asChild size="sm" variant="ghost" className="h-8 text-xs font-semibold text-slate-800 dark:text-slate-200 hover:text-sky-600 px-2.5">
+                  <Button asChild size="sm" variant="ghost" className="min-h-[36px] text-xs font-semibold text-slate-800 dark:text-slate-200 hover:text-sky-600 px-3 w-full sm:w-auto border border-slate-300 dark:border-slate-700 sm:border-transparent">
                     <a
                       href={`https://wa.me/254712867832?text=Hello%20Henry%20Solutions,%20I%20am%20inquiring%20about%20${encodeURIComponent(
                         service.title

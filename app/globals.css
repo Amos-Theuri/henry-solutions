@@ -79,10 +79,23 @@
   border-color: var(--border);
 }
 
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 5rem;
+}
+
 body {
   background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Touch optimization for mobile buttons and links */
+button,
+a {
+  touch-action: manipulation;
 }
 
 /* Custom accessible focus-visible styles */

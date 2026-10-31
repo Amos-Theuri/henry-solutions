@@ -55,7 +55,7 @@ export default function ServiceAreasPage() {
       <section className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           {/* Zone 1: Nairobi Core */}
-          <div className="rounded-2xl border border-slate-300 dark:border-slate-800 bg-card p-6 sm:p-8 space-y-6 shadow-sm">
+          <div className="rounded-2xl border border-slate-300 dark:border-slate-800 bg-card p-4 sm:p-8 space-y-6 shadow-sm">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
                 <div className="flex items-center gap-2">
@@ -70,7 +70,7 @@ export default function ServiceAreasPage() {
                   Nairobi Metropolitan Area
                 </h2>
               </div>
-              <Button asChild size="sm" variant="default" className="bg-sky-600 hover:bg-sky-500 text-white font-bold">
+              <Button asChild size="sm" variant="default" className="bg-sky-600 hover:bg-sky-500 text-white font-bold min-h-[44px] w-full sm:w-auto">
                 <a href={CONTACT_INFO.phoneTel}>
                   <Phone className="size-4" />
                   Nairobi Dispatch: {CONTACT_INFO.phone}
@@ -82,7 +82,7 @@ export default function ServiceAreasPage() {
               Our mobile technician units operate across all Nairobi suburbs, commercial nodes, and residential gated communities. Standard turnaround for site surveys, dish realignment, and fault triage in Nairobi is within 2 to 4 hours.
             </p>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs sm:text-sm">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs sm:text-sm">
               {SERVICE_AREAS.nairobi.map((area, idx) => (
                 <div
                   key={idx}
@@ -96,7 +96,7 @@ export default function ServiceAreasPage() {
           </div>
 
           {/* Zone 2: All 47 Counties in Kenya */}
-          <div className="rounded-2xl border border-slate-300 dark:border-slate-800 bg-card p-6 sm:p-8 space-y-6 shadow-sm">
+          <div className="rounded-2xl border border-slate-300 dark:border-slate-800 bg-card p-4 sm:p-8 space-y-6 shadow-sm">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
                 <div className="flex items-center gap-2">
@@ -111,7 +111,7 @@ export default function ServiceAreasPage() {
                   All 47 Counties in Kenya
                 </h2>
               </div>
-              <Button asChild size="sm" variant="whatsapp" className="font-bold">
+              <Button asChild size="sm" variant="whatsapp" className="font-bold min-h-[44px] w-full sm:w-auto">
                 <a
                   href={`https://wa.me/254712867832?text=Hello%20Henry%20Solutions,%20I%20have%20an%20upcountry%20project%20in%20Kenya.`}
                   target="_blank"
@@ -178,7 +178,7 @@ export default function ServiceAreasPage() {
           </div>
 
           {/* Zone 3: East Africa Cross-Border */}
-          <div className="rounded-2xl border border-sky-800 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white p-6 sm:p-8 space-y-6 shadow-xl">
+          <div className="rounded-2xl border border-sky-800 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white p-4 sm:p-8 space-y-6 shadow-xl">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
                 <div className="flex items-center gap-2">
@@ -193,7 +193,7 @@ export default function ServiceAreasPage() {
                   East Africa Regional Deployments
                 </h2>
               </div>
-              <Button asChild size="sm" variant="default" className="bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold shadow-md">
+              <Button asChild size="sm" variant="default" className="bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold shadow-md min-h-[44px] w-full sm:w-auto">
                 <a href={CONTACT_INFO.whatsappUrl} target="_blank" rel="noopener noreferrer">
                   <MessageSquare className="size-4" />
                   Inquire Regional Project

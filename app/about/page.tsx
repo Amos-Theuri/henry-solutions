@@ -59,14 +59,14 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              <div className="pt-2 flex flex-wrap gap-4">
-                <Button asChild className="bg-sky-600 hover:bg-sky-500 text-white font-bold">
+              <div className="pt-2 flex flex-col sm:flex-row gap-3">
+                <Button asChild className="w-full sm:w-auto bg-sky-600 hover:bg-sky-500 text-white font-bold min-h-[44px]">
                   <a href={CONTACT_INFO.phoneTel}>
                     <Phone className="size-4" />
                     Call Technician Direct ({CONTACT_INFO.phone})
                   </a>
                 </Button>
-                <Button asChild variant="whatsapp" className="font-bold">
+                <Button asChild variant="whatsapp" className="w-full sm:w-auto font-bold min-h-[44px]">
                   <a href={CONTACT_INFO.whatsappUrl} target="_blank" rel="noopener noreferrer">
                     <MessageSquare className="size-4" />
                     WhatsApp Consultation
@@ -76,7 +76,7 @@ export default function AboutPage() {
             </div>
 
             {/* Quick Contractor Specs Card */}
-            <div className="lg:col-span-5 bg-card border border-slate-300 dark:border-slate-800 p-6 sm:p-8 rounded-2xl shadow-md space-y-6">
+            <div className="lg:col-span-5 bg-card border border-slate-300 dark:border-slate-800 p-4 sm:p-8 rounded-2xl shadow-md space-y-6">
               <h3 className="font-bold text-lg text-foreground pb-2 border-b border-slate-200 dark:border-slate-800 flex items-center gap-2">
                 <ShieldCheck className="size-5 text-sky-600" />
                 Contractor Field Standards

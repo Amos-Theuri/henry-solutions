@@ -74,17 +74,17 @@ export default function ServicesPage() {
             <div
               key={service.id}
               id={service.id}
-              className="scroll-mt-24 rounded-2xl border border-slate-300 dark:border-slate-800 bg-card p-6 sm:p-8 lg:p-10 shadow-sm transition-all hover:border-sky-500 hover:shadow-lg"
+              className="scroll-mt-24 rounded-2xl border border-slate-300 dark:border-slate-800 bg-card p-4 sm:p-8 lg:p-10 shadow-sm transition-all hover:border-sky-500 hover:shadow-lg"
             >
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                 {/* Header & Description */}
                 <div className="lg:col-span-7 space-y-5">
-                  <div className="flex items-center gap-3">
-                    <div className="p-3 rounded-xl bg-sky-50 dark:bg-slate-900 border border-sky-200 dark:border-slate-700">
+                  <div className="flex items-start sm:items-center gap-3">
+                    <div className="p-3 rounded-xl bg-sky-50 dark:bg-slate-900 border border-sky-200 dark:border-slate-700 shrink-0">
                       {SERVICE_ICONS[service.id]}
                     </div>
                     <div>
-                      <div className="flex items-center gap-2">
+                      <div className="flex flex-wrap items-center gap-2">
                         <span className="text-xs font-bold text-sky-700 dark:text-sky-400 uppercase tracking-wider">
                           Service #{index + 1}
                         </span>
@@ -94,7 +94,7 @@ export default function ServicesPage() {
                           </Badge>
                         )}
                       </div>
-                      <h2 className="text-2xl font-bold tracking-tight text-foreground">
+                      <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground mt-0.5">
                         {service.title}
                       </h2>
                     </div>
@@ -120,7 +120,7 @@ export default function ServicesPage() {
                 </div>
 
                 {/* Specs, Equipment & CTA */}
-                <div className="lg:col-span-5 bg-slate-100/80 dark:bg-slate-900 p-6 rounded-xl border border-slate-300 dark:border-slate-800 space-y-5">
+                <div className="lg:col-span-5 bg-slate-100/80 dark:bg-slate-900 p-4 sm:p-6 rounded-xl border border-slate-300 dark:border-slate-800 space-y-5">
                   <div>
                     <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-slate-100 mb-2 flex items-center gap-1.5">
                       <Boxes className="size-3.5 text-sky-600" />
@@ -148,14 +148,14 @@ export default function ServicesPage() {
                   </div>
 
                   <div className="pt-4 border-t border-slate-200 dark:border-slate-800 space-y-2.5">
-                    <Button asChild className="w-full bg-sky-600 hover:bg-sky-500 text-white font-bold" size="default">
+                    <Button asChild className="w-full bg-sky-600 hover:bg-sky-500 text-white font-bold min-h-[44px]" size="default">
                       <Link href={`/contact?service=${encodeURIComponent(service.id)}`}>
                         Request Quote for This Service
                         <ArrowRight className="size-4 ml-1.5" />
                       </Link>
                     </Button>
 
-                    <Button asChild variant="whatsapp" className="w-full font-bold shadow-sm" size="default">
+                    <Button asChild variant="whatsapp" className="w-full font-bold shadow-sm min-h-[44px]" size="default">
                       <a
                         href={`https://wa.me/254712867832?text=Hello%20Henry%20Solutions,%20I%20need%20assistance%20with%20${encodeURIComponent(
                           service.title
