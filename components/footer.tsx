@@ -16,8 +16,8 @@ export function Footer() {
       {/* Emergency Callout Strip */}
       <div className="bg-sky-950 border-b border-sky-800/80 px-4 py-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
-          <div className="flex items-center gap-3">
-            <span className="flex size-10 items-center justify-center rounded-full bg-amber-500/25 text-amber-400">
+          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3">
+            <span className="flex size-10 items-center justify-center rounded-full bg-amber-500/25 text-amber-400 shrink-0">
               <ShieldAlert className="size-5" />
             </span>
             <div>
@@ -52,10 +52,10 @@ export function Footer() {
 
       {/* Main Footer Links */}
       <div className="max-w-7xl mx-auto px-4 pt-12 pb-24 sm:py-12 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 text-center md:text-left">
           {/* Col 1: About & Contractor Summary */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2 font-bold text-white text-lg">
+            <div className="flex items-center justify-center md:justify-start gap-2 font-bold text-white text-lg">
               <span className="flex size-8 items-center justify-center rounded-md bg-sky-600 text-white">
                 <Zap className="size-4 fill-amber-300 text-amber-300" />
               </span>
@@ -65,15 +65,15 @@ export function Footer() {
               Professional low-voltage systems technician and specialized electrical contractor based in Nairobi, Kenya. We engineer, install, and troubleshoot satellite television, perimeter security, surveillance networks, and automated systems with zero compromise on cable standards and signal stability.
             </p>
             <div className="space-y-1.5 text-xs sm:text-sm">
-              <p className="flex items-center gap-2 text-slate-100 font-medium">
+              <p className="flex items-center justify-center md:justify-start gap-2 text-slate-100 font-medium">
                 <CheckCircle2 className="size-4 text-emerald-400 shrink-0" />
                 Pure Copper Cabling &amp; Certified Brackets
               </p>
-              <p className="flex items-center gap-2 text-slate-100 font-medium">
+              <p className="flex items-center justify-center md:justify-start gap-2 text-slate-100 font-medium">
                 <CheckCircle2 className="size-4 text-emerald-400 shrink-0" />
                 Pre-installation Site Assessment
               </p>
-              <p className="flex items-center gap-2 text-slate-100 font-medium">
+              <p className="flex items-center justify-center md:justify-start gap-2 text-slate-100 font-medium">
                 <CheckCircle2 className="size-4 text-emerald-400 shrink-0" />
                 Workmanship Warranty on All Installs
               </p>
@@ -105,7 +105,7 @@ export function Footer() {
               Operational Coverage
             </h4>
             <div className="space-y-3 text-xs sm:text-sm text-slate-200">
-              <div className="flex items-start gap-2">
+              <div className="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-2">
                 <MapPin className="size-4 text-sky-400 mt-0.5 shrink-0" />
                 <div>
                   <strong className="text-white block font-bold">
@@ -116,7 +116,7 @@ export function Footer() {
                   </span>
                 </div>
               </div>
-              <div className="flex items-start gap-2">
+              <div className="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-2">
                 <Globe2 className="size-4 text-emerald-400 mt-0.5 shrink-0" />
                 <div>
                   <strong className="text-white block font-bold">

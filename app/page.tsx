@@ -40,10 +40,12 @@ export default function HomePage() {
         />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl space-y-6">
-            <div className="inline-flex items-center gap-2 rounded-full border border-sky-400/60 bg-sky-950 px-3.5 py-1 text-xs font-semibold text-sky-200">
-              <Zap className="size-3.5 fill-amber-400 text-amber-400" />
-              <span>Low-Voltage &amp; Perimeter Security Contractor &bull; Nairobi</span>
+          <div className="max-w-3xl space-y-6 text-center sm:text-left mx-auto sm:mx-0">
+            <div className="flex justify-center sm:justify-start">
+              <div className="inline-flex items-center gap-2 rounded-full border border-sky-400/60 bg-sky-950 px-3.5 py-1 text-xs font-semibold text-sky-200">
+                <Zap className="size-3.5 fill-amber-400 text-amber-400" />
+                <span>Low-Voltage &amp; Perimeter Security Contractor &bull; Nairobi</span>
+              </div>
             </div>
 
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight sm:leading-[1.12]">
@@ -55,7 +57,7 @@ export default function HomePage() {
             </p>
 
             {/* Direct Action CTAs */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center sm:justify-start gap-3 pt-2">
               <Button asChild size="lg" variant="default" className="min-h-[44px] bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold">
                 <a href={CONTACT_INFO.phoneTel}>
                   <Phone className="size-4" />
@@ -79,7 +81,7 @@ export default function HomePage() {
             </div>
 
             {/* Quick trust metrics */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-slate-700/80 text-xs">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-slate-700/80 text-xs text-center sm:text-left">
               <div className="space-y-0.5">
                 <strong className="block text-white text-lg font-bold">47 Counties</strong>
                 <span className="text-slate-200 font-medium">Direct site mobilization</span>
@@ -104,8 +106,8 @@ export default function HomePage() {
       {/* Services Grid Section */}
       <section className="py-16 sm:py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
-            <div className="max-w-2xl">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4 text-center md:text-left">
+            <div className="max-w-2xl mx-auto md:mx-0">
               <span className="text-xs font-bold uppercase tracking-wider text-sky-700 dark:text-sky-400">
                 Core Disciplines
               </span>
@@ -116,7 +118,7 @@ export default function HomePage() {
                 From high-gain satellite alignment to perimeter electric fences and automated entry systems, each installation is executed with professional meters, proper earthing, and clean conduit trunking.
               </p>
             </div>
-            <Button asChild variant="outline" size="sm" className="font-semibold text-foreground border-slate-400 dark:border-slate-700">
+            <Button asChild variant="outline" size="sm" className="font-semibold text-foreground border-slate-400 dark:border-slate-700 mx-auto md:mx-0">
               <Link href="/services">
                 View Full Technical Specifications
                 <ArrowRight className="size-4 ml-1.5" />
@@ -130,7 +132,7 @@ export default function HomePage() {
                 key={service.id}
                 className="flex flex-col justify-between border-slate-300 dark:border-slate-800 hover:border-sky-500 hover:shadow-lg transition-all duration-200"
               >
-                <CardHeader>
+                <CardHeader className="text-center sm:text-left">
                   <div className="flex items-center justify-between mb-2">
                     <div className="p-2.5 rounded-lg bg-sky-50 dark:bg-slate-900 border border-sky-200 dark:border-slate-700">
                       {SERVICE_ICONS[service.id]}
@@ -149,7 +151,7 @@ export default function HomePage() {
                 <CardContent className="space-y-3 flex-1">
                   <div className="space-y-2 text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium">
                     {service.features.slice(0, 3).map((f, i) => (
-                      <div key={i} className="flex items-start gap-2">
+                      <div key={i} className="flex items-start gap-2 text-left">
                         <CheckCircle2 className="size-4 text-sky-600 dark:text-sky-400 shrink-0 mt-0.5" />
                         <span className="leading-snug">{f}</span>
                       </div>
@@ -159,7 +161,7 @@ export default function HomePage() {
                 <CardFooter className="pt-3 border-t border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5">
                   <Link
                     href={`/services#${service.id}`}
-                    className="inline-flex items-center min-h-[36px] text-xs sm:text-sm font-bold text-sky-700 dark:text-sky-400 hover:underline"
+                    className="inline-flex items-center justify-center sm:justify-start min-h-[36px] text-xs sm:text-sm font-bold text-sky-700 dark:text-sky-400 hover:underline"
                   >
                     Details &amp; Equipment &rarr;
                   </Link>
@@ -184,7 +186,7 @@ export default function HomePage() {
       {/* Why Henry Solutions Contractor Standards */}
       <section className="py-16 bg-slate-100 dark:bg-slate-900/60 border-y border-slate-300 dark:border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mb-12">
+          <div className="max-w-3xl mb-12 text-center sm:text-left mx-auto sm:mx-0">
             <span className="text-xs font-bold uppercase tracking-wider text-sky-700 dark:text-sky-400">
               Contractor Integrity
             </span>
@@ -197,8 +199,8 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-card p-6 rounded-xl border border-slate-300 dark:border-slate-800 shadow-sm space-y-3">
-              <div className="size-10 rounded-lg bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 flex items-center justify-center font-bold">
+            <div className="bg-card p-6 rounded-xl border border-slate-300 dark:border-slate-800 shadow-sm space-y-3 text-center sm:text-left">
+              <div className="size-10 rounded-lg bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 flex items-center justify-center font-bold mx-auto sm:mx-0">
                 <CheckCircle2 className="size-5" />
               </div>
               <h3 className="font-bold text-foreground text-base">Tested Hardware &amp; Solid Copper</h3>
@@ -207,8 +209,8 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="bg-card p-6 rounded-xl border border-slate-300 dark:border-slate-800 shadow-sm space-y-3">
-              <div className="size-10 rounded-lg bg-sky-500/15 text-sky-700 dark:text-sky-400 flex items-center justify-center font-bold">
+            <div className="bg-card p-6 rounded-xl border border-slate-300 dark:border-slate-800 shadow-sm space-y-3 text-center sm:text-left">
+              <div className="size-10 rounded-lg bg-sky-500/15 text-sky-700 dark:text-sky-400 flex items-center justify-center font-bold mx-auto sm:mx-0">
                 <Activity className="size-5" />
               </div>
               <h3 className="font-bold text-foreground text-base">Calibrated Signal Meter Alignment</h3>
@@ -217,8 +219,8 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="bg-card p-6 rounded-xl border border-slate-300 dark:border-slate-800 shadow-sm space-y-3">
-              <div className="size-10 rounded-lg bg-amber-500/15 text-amber-700 dark:text-amber-400 flex items-center justify-center font-bold">
+            <div className="bg-card p-6 rounded-xl border border-slate-300 dark:border-slate-800 shadow-sm space-y-3 text-center sm:text-left">
+              <div className="size-10 rounded-lg bg-amber-500/15 text-amber-700 dark:text-amber-400 flex items-center justify-center font-bold mx-auto sm:mx-0">
                 <ShieldCheck className="size-5" />
               </div>
               <h3 className="font-bold text-foreground text-base">Perimeter Earthing &amp; Safety Compliance</h3>
@@ -233,9 +235,9 @@ export default function HomePage() {
       {/* Regional Servicing Banner */}
       <section className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl bg-gradient-to-r from-sky-950 via-slate-900 to-slate-950 text-white p-8 sm:p-12 shadow-xl border border-sky-700/50 relative overflow-hidden">
-            <div className="max-w-3xl space-y-4">
-              <div className="inline-flex items-center gap-2 rounded-full bg-sky-900/80 border border-sky-500/40 px-3.5 py-1 text-xs text-sky-200 font-semibold">
+          <div className="rounded-2xl bg-gradient-to-r from-sky-950 via-slate-900 to-slate-950 text-white p-8 sm:p-12 shadow-xl border border-sky-700/50 relative overflow-hidden text-center sm:text-left">
+            <div className="max-w-3xl space-y-4 mx-auto sm:mx-0">
+              <div className="inline-flex items-center gap-2 rounded-full bg-sky-900/80 border border-sky-500/40 px-3.5 py-1 text-xs text-sky-200 font-semibold mx-auto sm:mx-0">
                 <MapPin className="size-3.5 text-amber-400" />
                 <span>Nairobi Headquarters &bull; Upcountry &amp; Regional Travel</span>
               </div>
@@ -246,7 +248,7 @@ export default function HomePage() {
                 Whether you need satellite distribution for an apartment block in Westlands, an electric perimeter fence for an estate in Nakuru, or surveillance in Kampala, we mobilize tools and certified equipment directly to your site.
               </p>
 
-              <div className="flex flex-wrap gap-2 pt-2">
+              <div className="flex flex-wrap gap-2 pt-2 justify-center sm:justify-start">
                 {["Nairobi", "Kiambu", "Machakos", "Kajiado", "Nakuru", "Mombasa", "Eldoret", "Kisumu"].map((city) => (
                   <span key={city} className="text-xs px-3 py-1 rounded-md bg-white/20 text-white font-semibold border border-white/25">
                     {city}
@@ -257,7 +259,7 @@ export default function HomePage() {
                 </span>
               </div>
 
-              <div className="pt-4 flex flex-col sm:flex-row gap-3">
+              <div className="pt-4 flex flex-col sm:flex-row gap-3 justify-center sm:justify-start">
                 <Button asChild size="default" variant="default" className="bg-sky-400 hover:bg-sky-300 text-slate-950 font-bold">
                   <Link href="/service-areas">
                     Review Service Coverage &amp; Logistics

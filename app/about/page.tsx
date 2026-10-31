@@ -22,15 +22,15 @@ export default function AboutPage() {
     <div className="flex flex-col">
       {/* Hero Header */}
       <section className="bg-slate-900 text-white py-16 sm:py-20 border-b border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-          <div className="inline-flex items-center gap-2 rounded-full bg-sky-950 border border-sky-400/60 px-3.5 py-1 text-xs text-sky-200 font-semibold">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4 text-center sm:text-left">
+          <div className="inline-flex items-center gap-2 rounded-full bg-sky-950 border border-sky-400/60 px-3.5 py-1 text-xs text-sky-200 font-semibold mx-auto sm:mx-0">
             <HardHat className="size-3.5 text-amber-400" />
             <span>Technician &amp; Contractor Profile &bull; Nairobi, Kenya</span>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">
             About Henry Solutions
           </h1>
-          <p className="max-w-3xl text-slate-100 text-base sm:text-lg leading-relaxed font-medium">
+          <p className="max-w-3xl mx-auto sm:mx-0 text-slate-100 text-base sm:text-lg leading-relaxed font-medium">
             A hands-on low-voltage engineering contractor dedicated to providing reliable physical security, clean signal distribution, and automation infrastructure across Kenya and East Africa.
           </p>
         </div>
@@ -40,7 +40,7 @@ export default function AboutPage() {
       <section className="py-16 sm:py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div className="lg:col-span-7 space-y-6">
+            <div className="lg:col-span-7 space-y-6 text-center sm:text-left">
               <span className="text-xs font-bold uppercase tracking-wider text-sky-700 dark:text-sky-400">
                 The Hands-On Difference
               </span>
@@ -59,7 +59,7 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              <div className="pt-2 flex flex-col sm:flex-row gap-3">
+              <div className="pt-2 flex flex-col sm:flex-row gap-3 justify-center sm:justify-start">
                 <Button asChild className="w-full sm:w-auto bg-sky-600 hover:bg-sky-500 text-white font-bold min-h-[44px]">
                   <a href={CONTACT_INFO.phoneTel}>
                     <Phone className="size-4" />
@@ -76,15 +76,15 @@ export default function AboutPage() {
             </div>
 
             {/* Quick Contractor Specs Card */}
-            <div className="lg:col-span-5 bg-card border border-slate-300 dark:border-slate-800 p-4 sm:p-8 rounded-2xl shadow-md space-y-6">
-              <h3 className="font-bold text-lg text-foreground pb-2 border-b border-slate-200 dark:border-slate-800 flex items-center gap-2">
+            <div className="lg:col-span-5 bg-card border border-slate-300 dark:border-slate-800 p-4 sm:p-8 rounded-2xl shadow-md space-y-6 text-center sm:text-left">
+              <h3 className="font-bold text-lg text-foreground pb-2 border-b border-slate-200 dark:border-slate-800 flex items-center justify-center sm:justify-start gap-2">
                 <ShieldCheck className="size-5 text-sky-600" />
                 Contractor Field Standards
               </h3>
 
               <div className="space-y-4 text-xs sm:text-sm">
-                <div className="flex items-start gap-3">
-                  <span className="flex size-7 items-center justify-center rounded-md bg-sky-100 dark:bg-slate-800 text-sky-700 dark:text-sky-300 font-bold shrink-0">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-3">
+                  <span className="flex size-7 items-center justify-center rounded-md bg-sky-100 dark:bg-slate-800 text-sky-700 dark:text-sky-300 font-bold shrink-0 mx-auto sm:mx-0">
                     1
                   </span>
                   <div>
@@ -95,8 +95,8 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-3">
-                  <span className="flex size-7 items-center justify-center rounded-md bg-sky-100 dark:bg-slate-800 text-sky-700 dark:text-sky-300 font-bold shrink-0">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-3">
+                  <span className="flex size-7 items-center justify-center rounded-md bg-sky-100 dark:bg-slate-800 text-sky-700 dark:text-sky-300 font-bold shrink-0 mx-auto sm:mx-0">
                     2
                   </span>
                   <div>
@@ -107,8 +107,8 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-3">
-                  <span className="flex size-7 items-center justify-center rounded-md bg-sky-100 dark:bg-slate-800 text-sky-700 dark:text-sky-300 font-bold shrink-0">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-3">
+                  <span className="flex size-7 items-center justify-center rounded-md bg-sky-100 dark:bg-slate-800 text-sky-700 dark:text-sky-300 font-bold shrink-0 mx-auto sm:mx-0">
                     3
                   </span>
                   <div>
@@ -119,8 +119,8 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-3">
-                  <span className="flex size-7 items-center justify-center rounded-md bg-sky-100 dark:bg-slate-800 text-sky-700 dark:text-sky-300 font-bold shrink-0">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-3">
+                  <span className="flex size-7 items-center justify-center rounded-md bg-sky-100 dark:bg-slate-800 text-sky-700 dark:text-sky-300 font-bold shrink-0 mx-auto sm:mx-0">
                     4
                   </span>
                   <div>
@@ -146,8 +146,8 @@ export default function AboutPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="p-6 rounded-xl border border-slate-300 dark:border-slate-800 bg-card space-y-3 shadow-sm">
-                <div className="size-10 rounded-lg bg-sky-500/15 text-sky-700 dark:text-sky-400 flex items-center justify-center font-bold">
+              <div className="p-6 rounded-xl border border-slate-300 dark:border-slate-800 bg-card space-y-3 shadow-sm text-center sm:text-left">
+                <div className="size-10 rounded-lg bg-sky-500/15 text-sky-700 dark:text-sky-400 flex items-center justify-center font-bold mx-auto sm:mx-0">
                   <Gauge className="size-5" />
                 </div>
                 <h3 className="font-bold text-foreground text-base">Accurate Signal Tuning</h3>
@@ -156,8 +156,8 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              <div className="p-6 rounded-xl border border-slate-300 dark:border-slate-800 bg-card space-y-3 shadow-sm">
-                <div className="size-10 rounded-lg bg-amber-500/15 text-amber-700 dark:text-amber-400 flex items-center justify-center font-bold">
+              <div className="p-6 rounded-xl border border-slate-300 dark:border-slate-800 bg-card space-y-3 shadow-sm text-center sm:text-left">
+                <div className="size-10 rounded-lg bg-amber-500/15 text-amber-700 dark:text-amber-400 flex items-center justify-center font-bold mx-auto sm:mx-0">
                   <Zap className="size-5" />
                 </div>
                 <h3 className="font-bold text-foreground text-base">Intruder-Deterrent Fencing</h3>
@@ -166,8 +166,8 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              <div className="p-6 rounded-xl border border-slate-300 dark:border-slate-800 bg-card space-y-3 shadow-sm">
-                <div className="size-10 rounded-lg bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 flex items-center justify-center font-bold">
+              <div className="p-6 rounded-xl border border-slate-300 dark:border-slate-800 bg-card space-y-3 shadow-sm text-center sm:text-left">
+                <div className="size-10 rounded-lg bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 flex items-center justify-center font-bold mx-auto sm:mx-0">
                   <Cpu className="size-5" />
                 </div>
                 <h3 className="font-bold text-foreground text-base">Long-Term Service Support</h3>
@@ -189,14 +189,14 @@ export default function AboutPage() {
           <p className="text-slate-100 text-sm sm:text-base max-w-xl mx-auto leading-relaxed font-medium">
             Need advice on an upcoming construction project, an office CCTV overhaul, or electric fence installation? Call or WhatsApp for honest technical recommendations.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-3 pt-2">
-            <Button asChild size="lg" className="bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold shadow-md">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-3 pt-2 w-full sm:w-auto">
+            <Button asChild size="lg" className="w-full sm:w-auto bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold shadow-md">
               <a href={CONTACT_INFO.phoneTel}>
                 <Phone className="size-4" />
                 Direct Call: {CONTACT_INFO.phone}
               </a>
             </Button>
-            <Button asChild size="lg" variant="whatsapp" className="font-extrabold shadow-md">
+            <Button asChild size="lg" variant="whatsapp" className="w-full sm:w-auto font-extrabold shadow-md">
               <a href={CONTACT_INFO.whatsappUrl} target="_blank" rel="noopener noreferrer">
                 <MessageSquare className="size-4" />
                 WhatsApp Message

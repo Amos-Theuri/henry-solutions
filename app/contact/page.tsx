@@ -42,15 +42,15 @@ export default function ContactPage() {
     <div className="flex flex-col">
       {/* Header */}
       <section className="bg-slate-900 text-white py-16 sm:py-20 border-b border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-          <div className="inline-flex items-center gap-2 rounded-full bg-sky-950 border border-sky-400/60 px-3.5 py-1 text-xs text-sky-200 font-semibold">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4 text-center sm:text-left">
+          <div className="inline-flex items-center gap-2 rounded-full bg-sky-950 border border-sky-400/60 px-3.5 py-1 text-xs text-sky-200 font-semibold mx-auto sm:mx-0">
             <Zap className="size-3.5 text-amber-400" />
             <span>Direct Technician Contact &bull; Fast Quote Turnaround</span>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">
             Contact Henry Solutions
           </h1>
-          <p className="max-w-3xl text-slate-100 text-base sm:text-lg leading-relaxed font-medium">
+          <p className="max-w-3xl mx-auto sm:mx-0 text-slate-100 text-base sm:text-lg leading-relaxed font-medium">
             Reach out directly for scheduled installations, technical site surveys, equipment procurement, or emergency low-voltage system diagnostics.
           </p>
         </div>
@@ -61,7 +61,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
             {/* Direct Contact Options */}
-            <div className="lg:col-span-5 space-y-6">
+            <div className="lg:col-span-5 space-y-6 text-center sm:text-left">
               <div>
                 <span className="text-xs font-bold uppercase tracking-wider text-sky-700 dark:text-sky-400">
                   Direct Channels
@@ -75,9 +75,9 @@ export default function ContactPage() {
               </div>
 
               {/* Contact Card 1: Phone */}
-              <div className="rounded-xl border border-slate-300 dark:border-slate-800 bg-card p-5 space-y-3 shadow-md hover:border-amber-500 transition-colors">
-                <div className="flex items-center gap-3">
-                  <div className="size-10 rounded-lg bg-amber-500/15 text-amber-700 dark:text-amber-400 flex items-center justify-center">
+              <div className="rounded-xl border border-slate-300 dark:border-slate-800 bg-card p-5 space-y-3 shadow-md hover:border-amber-500 transition-colors text-center sm:text-left">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3">
+                  <div className="size-10 rounded-lg bg-amber-500/15 text-amber-700 dark:text-amber-400 flex items-center justify-center mx-auto sm:mx-0">
                     <Phone className="size-5" />
                   </div>
                   <div>
@@ -102,9 +102,9 @@ export default function ContactPage() {
               </div>
 
               {/* Contact Card 2: WhatsApp */}
-              <div className="rounded-xl border border-slate-300 dark:border-slate-800 bg-card p-5 space-y-3 shadow-md hover:border-emerald-500 transition-colors">
-                <div className="flex items-center gap-3">
-                  <div className="size-10 rounded-lg bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 flex items-center justify-center">
+              <div className="rounded-xl border border-slate-300 dark:border-slate-800 bg-card p-5 space-y-3 shadow-md hover:border-emerald-500 transition-colors text-center sm:text-left">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3">
+                  <div className="size-10 rounded-lg bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 flex items-center justify-center mx-auto sm:mx-0">
                     <MessageSquare className="size-5" />
                   </div>
                   <div>
@@ -131,9 +131,9 @@ export default function ContactPage() {
               </div>
 
               {/* Contact Card 3: Email */}
-              <div className="rounded-xl border border-slate-300 dark:border-slate-800 bg-card p-5 space-y-3 shadow-md hover:border-sky-500 transition-colors">
-                <div className="flex items-center gap-3">
-                  <div className="size-10 rounded-lg bg-sky-500/15 text-sky-700 dark:text-sky-400 flex items-center justify-center">
+              <div className="rounded-xl border border-slate-300 dark:border-slate-800 bg-card p-5 space-y-3 shadow-md hover:border-sky-500 transition-colors text-center sm:text-left">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3">
+                  <div className="size-10 rounded-lg bg-sky-500/15 text-sky-700 dark:text-sky-400 flex items-center justify-center mx-auto sm:mx-0">
                     <Mail className="size-5" />
                   </div>
                   <div>
@@ -158,8 +158,8 @@ export default function ContactPage() {
               </div>
 
               {/* Location badge */}
-              <div className="p-4 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-800 text-xs sm:text-sm space-y-1.5">
-                <div className="flex items-center gap-2 font-bold text-foreground">
+              <div className="p-4 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-800 text-xs sm:text-sm space-y-1.5 text-center sm:text-left">
+                <div className="flex items-center justify-center sm:justify-start gap-2 font-bold text-foreground">
                   <MapPin className="size-4 text-sky-600" />
                   <span>Headquarters &amp; Field Dispatch</span>
                 </div>
@@ -172,7 +172,7 @@ export default function ContactPage() {
 
             {/* Request a Quote / Inspection Form */}
             <div className="lg:col-span-7 rounded-2xl border border-slate-300 dark:border-slate-800 bg-card p-4 sm:p-8 shadow-md">
-              <div className="mb-6 space-y-1">
+              <div className="mb-6 space-y-1 text-center sm:text-left">
                 <h2 className="text-xl font-bold tracking-tight text-foreground">
                   Request an Estimate or Diagnostic Visit
                 </h2>
@@ -203,12 +203,12 @@ export default function ContactPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {FAQS.map((faq, i) => (
-              <div key={i} className="p-5 rounded-xl border border-slate-300 dark:border-slate-800 bg-card space-y-2 shadow-sm">
-                <h3 className="font-bold text-foreground text-sm sm:text-base flex items-start gap-2">
-                  <HelpCircle className="size-4 text-sky-600 shrink-0 mt-0.5" />
+              <div key={i} className="p-5 rounded-xl border border-slate-300 dark:border-slate-800 bg-card space-y-2 shadow-sm text-center sm:text-left">
+                <h3 className="font-bold text-foreground text-sm sm:text-base flex flex-col sm:flex-row items-center sm:items-start gap-2">
+                  <HelpCircle className="size-4 text-sky-600 shrink-0 mt-0.5 mx-auto sm:mx-0" />
                   <span>{faq.q}</span>
                 </h3>
-                <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed pl-6 font-medium">
+                <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed sm:pl-6 font-medium">
                   {faq.a}
                 </p>
               </div>

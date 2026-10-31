@@ -39,25 +39,25 @@ export default function ServicesPage() {
     <div className="flex flex-col">
       {/* Page Header */}
       <section className="bg-slate-900 text-white py-16 sm:py-20 border-b border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-          <div className="inline-flex items-center gap-2 rounded-full bg-sky-950 border border-sky-400/60 px-3.5 py-1 text-xs text-sky-200 font-semibold">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4 text-center sm:text-left">
+          <div className="inline-flex items-center gap-2 rounded-full bg-sky-950 border border-sky-400/60 px-3.5 py-1 text-xs text-sky-200 font-semibold mx-auto sm:mx-0">
             <Cpu className="size-3.5" />
             <span>Technical Service Catalog &bull; Nairobi &amp; Countrywide</span>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">
             Low-Voltage Systems &amp; Security Services
           </h1>
-          <p className="max-w-3xl text-slate-100 text-base sm:text-lg leading-relaxed font-medium">
+          <p className="max-w-3xl mx-auto sm:mx-0 text-slate-100 text-base sm:text-lg leading-relaxed font-medium">
             Every service is planned and installed following rigorous electrical standards. We use genuine components, high-grade copper cables, calibrated signal meters, and verified earthing systems to eliminate downtime.
           </p>
-          <div className="pt-2 flex flex-wrap gap-3">
-            <Button asChild variant="whatsapp" size="sm" className="font-bold shadow-md">
+          <div className="pt-2 flex flex-wrap gap-3 justify-center sm:justify-start">
+            <Button asChild variant="whatsapp" size="sm" className="font-bold shadow-md w-full sm:w-auto">
               <a href={CONTACT_INFO.whatsappUrl} target="_blank" rel="noopener noreferrer">
                 <MessageSquare className="size-4" />
                 <span>Discuss System Scope on WhatsApp</span>
               </a>
             </Button>
-            <Button asChild variant="outline" size="sm" className="border-slate-500 text-white hover:bg-slate-800 font-semibold">
+            <Button asChild variant="outline" size="sm" className="border-slate-500 text-white hover:bg-slate-800 font-semibold w-full sm:w-auto">
               <a href={CONTACT_INFO.phoneTel}>
                 <Phone className="size-4" />
                 <span>Call {CONTACT_INFO.phone}</span>
@@ -78,13 +78,13 @@ export default function ServicesPage() {
             >
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                 {/* Header & Description */}
-                <div className="lg:col-span-7 space-y-5">
-                  <div className="flex items-start sm:items-center gap-3">
+                <div className="lg:col-span-7 space-y-5 text-center sm:text-left">
+                  <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3">
                     <div className="p-3 rounded-xl bg-sky-50 dark:bg-slate-900 border border-sky-200 dark:border-slate-700 shrink-0">
                       {SERVICE_ICONS[service.id]}
                     </div>
                     <div>
-                      <div className="flex flex-wrap items-center gap-2">
+                      <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
                         <span className="text-xs font-bold text-sky-700 dark:text-sky-400 uppercase tracking-wider">
                           Service #{index + 1}
                         </span>
@@ -105,10 +105,10 @@ export default function ServicesPage() {
                   </p>
 
                   <div className="space-y-3 pt-2">
-                    <h3 className="text-xs font-bold uppercase tracking-wider text-foreground">
+                    <h3 className="text-xs font-bold uppercase tracking-wider text-foreground text-center sm:text-left">
                       Execution Scope &amp; Deliverables
                     </h3>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm text-left">
                       {service.features.map((feature, fIdx) => (
                         <div key={fIdx} className="flex items-start gap-2 bg-slate-100 dark:bg-slate-900/60 p-3 rounded-lg border border-slate-200 dark:border-slate-800">
                           <CheckCircle2 className="size-4 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" />
@@ -120,13 +120,13 @@ export default function ServicesPage() {
                 </div>
 
                 {/* Specs, Equipment & CTA */}
-                <div className="lg:col-span-5 bg-slate-100/80 dark:bg-slate-900 p-4 sm:p-6 rounded-xl border border-slate-300 dark:border-slate-800 space-y-5">
+                <div className="lg:col-span-5 bg-slate-100/80 dark:bg-slate-900 p-4 sm:p-6 rounded-xl border border-slate-300 dark:border-slate-800 space-y-5 text-center sm:text-left">
                   <div>
-                    <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-slate-100 mb-2 flex items-center gap-1.5">
+                    <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-slate-100 mb-2 flex items-center justify-center sm:justify-start gap-1.5">
                       <Boxes className="size-3.5 text-sky-600" />
                       Hardware &amp; Equipment Standards
                     </h4>
-                    <div className="flex flex-wrap gap-1.5">
+                    <div className="flex flex-wrap gap-1.5 justify-center sm:justify-start">
                       {service.equipment.map((eq, eIdx) => (
                         <span
                           key={eIdx}
@@ -184,21 +184,21 @@ export default function ServicesPage() {
 
       {/* Bottom Dispatch Prompt */}
       <section className="bg-slate-950 text-white py-12 border-t border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
-          <div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+          <div className="space-y-1">
             <h3 className="text-xl font-bold text-white">Need a Custom Installation or System Audit?</h3>
             <p className="text-xs sm:text-sm text-slate-200 font-medium">
               We provide on-site technical surveys across Nairobi and schedule nationwide dispatches for new buildings and estates.
             </p>
           </div>
-          <div className="flex items-center gap-3 shrink-0">
-            <Button asChild variant="whatsapp" className="font-bold">
+          <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-3 shrink-0 w-full sm:w-auto">
+            <Button asChild variant="whatsapp" className="font-bold w-full sm:w-auto">
               <a href={CONTACT_INFO.whatsappUrl} target="_blank" rel="noopener noreferrer">
                 <MessageSquare className="size-4" />
                 WhatsApp Technician
               </a>
             </Button>
-            <Button asChild variant="outline" className="border-slate-600 text-white hover:bg-slate-800 font-semibold">
+            <Button asChild variant="outline" className="border-slate-600 text-white hover:bg-slate-800 font-semibold w-full sm:w-auto">
               <Link href="/contact">
                 Contact Office
               </Link>

@@ -161,7 +161,7 @@ export function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className={`min-h-[44px] flex items-center px-3.5 py-2.5 rounded-md text-base font-bold transition-colors ${
+                  className={`min-h-[44px] flex items-center justify-center px-3.5 py-2.5 rounded-md text-base font-bold transition-colors ${
                     isActive
                       ? "bg-sky-100 text-sky-900 dark:bg-sky-950 dark:text-sky-300 font-extrabold border border-sky-300 dark:border-sky-800"
                       : "text-slate-900 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800"
