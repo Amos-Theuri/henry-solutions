@@ -145,8 +145,8 @@ export default function ServiceAreasPage() {
 
             {/* Upcountry Mobilization Protocol */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
-              <div className="p-4 rounded-lg border border-slate-300 dark:border-slate-800 bg-card space-y-2 text-center sm:text-left">
-                <div className="size-7 rounded bg-sky-100 dark:bg-slate-800 text-sky-700 dark:text-sky-300 flex items-center justify-center font-bold text-xs mx-auto sm:mx-0">
+              <div className="p-4 rounded-lg border border-slate-300 dark:border-slate-800 bg-card space-y-2 text-left">
+                <div className="size-7 rounded bg-sky-100 dark:bg-slate-800 text-sky-700 dark:text-sky-300 flex items-center justify-center font-bold text-xs">
                   1
                 </div>
                 <h4 className="text-sm font-bold text-foreground">Remote Scope &amp; Bill of Materials</h4>
@@ -155,8 +155,8 @@ export default function ServiceAreasPage() {
                 </p>
               </div>
 
-              <div className="p-4 rounded-lg border border-slate-300 dark:border-slate-800 bg-card space-y-2 text-center sm:text-left">
-                <div className="size-7 rounded bg-sky-100 dark:bg-slate-800 text-sky-700 dark:text-sky-300 flex items-center justify-center font-bold text-xs mx-auto sm:mx-0">
+              <div className="p-4 rounded-lg border border-slate-300 dark:border-slate-800 bg-card space-y-2 text-left">
+                <div className="size-7 rounded bg-sky-100 dark:bg-slate-800 text-sky-700 dark:text-sky-300 flex items-center justify-center font-bold text-xs">
                   2
                 </div>
                 <h4 className="text-sm font-bold text-foreground">Hardware Procurement &amp; Pre-Testing</h4>
@@ -165,8 +165,8 @@ export default function ServiceAreasPage() {
                 </p>
               </div>
 
-              <div className="p-4 rounded-lg border border-slate-300 dark:border-slate-800 bg-card space-y-2 text-center sm:text-left">
-                <div className="size-7 rounded bg-sky-100 dark:bg-slate-800 text-sky-700 dark:text-sky-300 flex items-center justify-center font-bold text-xs mx-auto sm:mx-0">
+              <div className="p-4 rounded-lg border border-slate-300 dark:border-slate-800 bg-card space-y-2 text-left">
+                <div className="size-7 rounded bg-sky-100 dark:bg-slate-800 text-sky-700 dark:text-sky-300 flex items-center justify-center font-bold text-xs">
                   3
                 </div>
                 <h4 className="text-sm font-bold text-foreground">Dedicated On-Site Execution</h4>
@@ -220,7 +220,7 @@ export default function ServiceAreasPage() {
               ))}
             </div>
 
-            <div className="p-4 rounded-lg bg-sky-950 border border-sky-500/50 text-xs sm:text-sm text-slate-100 flex flex-col sm:flex-row items-center sm:items-start gap-3 font-medium text-center sm:text-left">
+            <div className="p-4 rounded-lg bg-sky-950 border border-sky-500/50 text-xs sm:text-sm text-slate-100 flex items-start gap-3 font-medium text-left">
               <Truck className="size-4 text-sky-400 shrink-0 mt-0.5" />
               <span>
                 <strong className="text-white font-bold">Cross-border logistics:</strong> Regional projects include full customs clearance documentation for specialized tools and test equipment, coordinated mobilization timelines, and direct client milestone reviews.

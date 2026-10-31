@@ -203,12 +203,12 @@ export default function ContactPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {FAQS.map((faq, i) => (
-              <div key={i} className="p-5 rounded-xl border border-slate-300 dark:border-slate-800 bg-card space-y-2 shadow-sm text-center sm:text-left">
-                <h3 className="font-bold text-foreground text-sm sm:text-base flex flex-col sm:flex-row items-center sm:items-start gap-2">
-                  <HelpCircle className="size-4 text-sky-600 shrink-0 mt-0.5 mx-auto sm:mx-0" />
+              <div key={i} className="p-5 rounded-xl border border-slate-300 dark:border-slate-800 bg-card space-y-2 shadow-sm text-left">
+                <h3 className="font-bold text-foreground text-sm sm:text-base flex items-start gap-2.5 text-left">
+                  <HelpCircle className="size-4 text-sky-600 shrink-0 mt-0.5" />
                   <span>{faq.q}</span>
                 </h3>
-                <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed sm:pl-6 font-medium">
+                <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed pl-6.5 font-medium text-left">
                   {faq.a}
                 </p>
               </div>

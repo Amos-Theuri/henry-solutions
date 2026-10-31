@@ -76,15 +76,15 @@ export default function AboutPage() {
             </div>
 
             {/* Quick Contractor Specs Card */}
-            <div className="lg:col-span-5 bg-card border border-slate-300 dark:border-slate-800 p-4 sm:p-8 rounded-2xl shadow-md space-y-6 text-center sm:text-left">
+            <div className="lg:col-span-5 bg-card border border-slate-300 dark:border-slate-800 p-4 sm:p-8 rounded-2xl shadow-md space-y-6">
               <h3 className="font-bold text-lg text-foreground pb-2 border-b border-slate-200 dark:border-slate-800 flex items-center justify-center sm:justify-start gap-2">
                 <ShieldCheck className="size-5 text-sky-600" />
                 Contractor Field Standards
               </h3>
 
               <div className="space-y-4 text-xs sm:text-sm">
-                <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-3">
-                  <span className="flex size-7 items-center justify-center rounded-md bg-sky-100 dark:bg-slate-800 text-sky-700 dark:text-sky-300 font-bold shrink-0 mx-auto sm:mx-0">
+                <div className="flex items-start text-left gap-3">
+                  <span className="flex size-7 items-center justify-center rounded-md bg-sky-100 dark:bg-slate-800 text-sky-700 dark:text-sky-300 font-bold shrink-0 mt-0.5">
                     1
                   </span>
                   <div>
@@ -95,8 +95,8 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-                <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-3">
-                  <span className="flex size-7 items-center justify-center rounded-md bg-sky-100 dark:bg-slate-800 text-sky-700 dark:text-sky-300 font-bold shrink-0 mx-auto sm:mx-0">
+                <div className="flex items-start text-left gap-3">
+                  <span className="flex size-7 items-center justify-center rounded-md bg-sky-100 dark:bg-slate-800 text-sky-700 dark:text-sky-300 font-bold shrink-0 mt-0.5">
                     2
                   </span>
                   <div>
@@ -107,8 +107,8 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-                <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-3">
-                  <span className="flex size-7 items-center justify-center rounded-md bg-sky-100 dark:bg-slate-800 text-sky-700 dark:text-sky-300 font-bold shrink-0 mx-auto sm:mx-0">
+                <div className="flex items-start text-left gap-3">
+                  <span className="flex size-7 items-center justify-center rounded-md bg-sky-100 dark:bg-slate-800 text-sky-700 dark:text-sky-300 font-bold shrink-0 mt-0.5">
                     3
                   </span>
                   <div>
@@ -119,8 +119,8 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-                <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-3">
-                  <span className="flex size-7 items-center justify-center rounded-md bg-sky-100 dark:bg-slate-800 text-sky-700 dark:text-sky-300 font-bold shrink-0 mx-auto sm:mx-0">
+                <div className="flex items-start text-left gap-3">
+                  <span className="flex size-7 items-center justify-center rounded-md bg-sky-100 dark:bg-slate-800 text-sky-700 dark:text-sky-300 font-bold shrink-0 mt-0.5">
                     4
                   </span>
                   <div>

@@ -65,17 +65,17 @@ export function Footer() {
               Professional low-voltage systems technician and specialized electrical contractor based in Nairobi, Kenya. We engineer, install, and troubleshoot satellite television, perimeter security, surveillance networks, and automated systems with zero compromise on cable standards and signal stability.
             </p>
             <div className="space-y-1.5 text-xs sm:text-sm">
-              <p className="flex items-center justify-center md:justify-start gap-2 text-slate-100 font-medium">
-                <CheckCircle2 className="size-4 text-emerald-400 shrink-0" />
-                Pure Copper Cabling &amp; Certified Brackets
+              <p className="flex items-start text-left gap-2 text-slate-100 font-medium">
+                <CheckCircle2 className="size-4 text-emerald-400 shrink-0 mt-0.5" />
+                <span>Pure Copper Cabling &amp; Certified Brackets</span>
               </p>
-              <p className="flex items-center justify-center md:justify-start gap-2 text-slate-100 font-medium">
-                <CheckCircle2 className="size-4 text-emerald-400 shrink-0" />
-                Pre-installation Site Assessment
+              <p className="flex items-start text-left gap-2 text-slate-100 font-medium">
+                <CheckCircle2 className="size-4 text-emerald-400 shrink-0 mt-0.5" />
+                <span>Pre-installation Site Assessment</span>
               </p>
-              <p className="flex items-center justify-center md:justify-start gap-2 text-slate-100 font-medium">
-                <CheckCircle2 className="size-4 text-emerald-400 shrink-0" />
-                Workmanship Warranty on All Installs
+              <p className="flex items-start text-left gap-2 text-slate-100 font-medium">
+                <CheckCircle2 className="size-4 text-emerald-400 shrink-0 mt-0.5" />
+                <span>Workmanship Warranty on All Installs</span>
               </p>
             </div>
           </div>
@@ -105,7 +105,7 @@ export function Footer() {
               Operational Coverage
             </h4>
             <div className="space-y-3 text-xs sm:text-sm text-slate-200">
-              <div className="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-2">
+              <div className="flex items-start text-left gap-2">
                 <MapPin className="size-4 text-sky-400 mt-0.5 shrink-0" />
                 <div>
                   <strong className="text-white block font-bold">
@@ -116,7 +116,7 @@ export function Footer() {
                   </span>
                 </div>
               </div>
-              <div className="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-2">
+              <div className="flex items-start text-left gap-2">
                 <Globe2 className="size-4 text-emerald-400 mt-0.5 shrink-0" />
                 <div>
                   <strong className="text-white block font-bold">
